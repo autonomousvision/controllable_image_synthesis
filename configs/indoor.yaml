@@ -1,0 +1,9 @@
+data:
+  name: shapenet_indoor_bg
+  sub_dirs: ['indoor0_bg1', 'indoor1_bg1', 'indoor2_bg1', 'indoor3_bg1']
+  nlabels: 2
+generator:
+  render_type: point
+  bg_cube: True
+training:
+  out_dir: results/indoor

@@ -1,0 +1,8 @@
+data:
+  name: shapenet_car
+  sub_dirs: ['car1_bg0', 'car2_bg0', 'car3_bg0']
+generator:
+  render_type: cuboid
+  bg_cube: False
+training:
+  out_dir: results/ablation

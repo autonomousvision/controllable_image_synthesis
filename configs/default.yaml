@@ -1,0 +1,37 @@
+data:
+  name: shapenet_car
+  img_size: 64
+  nlabels: 1
+  root_dir: data
+  sub_dirs:
+generator:
+  n_prim: 3
+  render_type: point
+  bg_cube: False
+discriminator:
+z_dist:
+  dim: 128
+training:
+  out_dir: results/default
+  param_transforms: rot_30_1
+  batch_size: 32
+  nworkers: 6
+  monitoring: tensorboard
+  sample_every: 1000
+  fid_every: 5000
+  fid_single_every: 5000
+  save_every: 900
+  backup_every: 10000
+  restart_every: -1
+  lr_g: 0.0001
+  lr_d: 0.0001
+  weight_compactness: 0.03
+  weight_3dconsistency: 0.1
+  model_file: model.pt
+test:
+  batch_size: 32
+  nworkers: 0
+  sample_size: 8
+  sample_nrow: 16
+  model_file: model_best.pt
+

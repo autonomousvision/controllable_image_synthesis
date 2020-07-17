@@ -1,0 +1,9 @@
+data:
+  name: shapenet_car_bg
+  sub_dirs: ['car0_bg1', 'car1_bg1', 'car2_bg1', 'car3_bg1']
+  nlabels: 2
+generator:
+  render_type: point
+  bg_cube: True
+training:
+  out_dir: results/car
