@@ -4,7 +4,7 @@ import os
 import torch
 from skimage.io import imsave
 
-import externals.renderer.neural_renderer.neural_renderer.cuda.create_texture_image as create_texture_image_cuda
+import neural_renderer.cuda.create_texture_image as create_texture_image_cuda
 
 
 def create_texture_image(textures, texture_size_out=16):
